@@ -20,15 +20,15 @@ void main() {
   // ------------------------------------------
   
   // Ficha de treino de um aplicativo de academia
-  String nomeExercicio = "Supino Reto";
-  int repeticoes = 12;
-  double pesoKg = 15.5;
-  bool treinoConcluido = false;
+  //String nomeExercicio = "Supino Reto";
+  //int repeticoes = 12;
+  //double pesoKg = 15.5;
+  //bool treinoConcluido = false;
 
-  print("Exercício: " + nomeExercicio);
-  print("Repetições: " + repeticoes.toString());
-  print("Peso: " + pesoKg.toString() + " kg");
-  print("Terminou? " + treinoConcluido.toString());
+  //print("Exercício: " + nomeExercicio);
+  //print("Repetições: " + repeticoes.toString());
+  //print("Peso: " + pesoKg.toString() + " kg");
+  //print("Terminou? " + treinoConcluido.toString());
 
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS
@@ -46,5 +46,18 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+   String NomePaciente = "Carlos Silva";
+   int idade = 36;
+   double altura = 1.67;
+   bool consulta = true;
+
+   print("nome do paciente: " + NomePaciente);
+   print("Idade: " + idade.toString());
+   print("altura: " + altura.toString());
+   
+   if(consulta = true){
+    print("Tem consulta?: " + "Sim");
+   }else{
+    print("Tem consulta?: " + "Não");
+   }
 }

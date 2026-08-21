@@ -16,22 +16,22 @@ void main() {
   // EXEMPLOS PRÁTICOS
   // ------------------------------------------
   
-  String nomeUsuario = "   fulano_gamer123   ";
+ // String nomeUsuario = "   fulano_gamer123   ";
   
   // Limpando os espaços em branco antes e depois com o .trim()
-  String nomeLimpo = nomeUsuario.trim();
+  ///String nomeLimpo = nomeUsuario.trim();
   
   // Transformando tudo em maiúsculo com o .toUpperCase()
-  String nomeGritando = nomeLimpo.toUpperCase();
+//  String nomeGritando = nomeLimpo.toUpperCase();
   
-  print("Nome original: '" + nomeUsuario + "'");
-  print("Nome corrigido: " + nomeLimpo);
-  print("Nome destaque: " + nomeGritando);
-  print("Quantidade de caracteres: " + nomeLimpo.length.toString());
+ // print("Nome original: '" + nomeUsuario + "'");
+ // print("Nome corrigido: " + nomeLimpo);
+ //// print("Nome destaque: " + nomeGritando);
+  //print("Quantidade de caracteres: " + nomeLimpo.length.toString());
 
   // Também funciona com números!
-  double notaDaProva = 7.4;
-  print("Nota arredondada: " + notaDaProva.round().toString());
+  //double notaDaProva = 7.4;
+  //print("Nota arredondada: " + notaDaProva.round().toString());
 
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS
@@ -46,5 +46,8 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
-}
+  String minuscula = "minuscula";
+
+  print(minuscula.toUpperCase());
+  print("tem " + minuscula.length.toString() + " letras");
+  }

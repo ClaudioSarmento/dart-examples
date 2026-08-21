@@ -12,21 +12,21 @@
   - final: O valor é descoberto na hora que o programa roda, mas depois não muda mais.
 */
 
-void main() {
+//void main() {
   // ------------------------------------------
   // EXEMPLOS PRÁTICOS
   // ------------------------------------------
   
   // Regras de uma partida de Futevôlei que não mudam
-  const int maxJogadoresPorTime = 2;
-  const String formatoQuadra = "Areia";
+ // const int maxJogadoresPorTime = 2;
+ // const String formatoQuadra = "Areia";
   
-  print("O limite de jogadores é $maxJogadoresPorTime por time.");
+ // print("O limite de jogadores é $maxJogadoresPorTime por time.");
   // Se tentarmos fazer: maxJogadoresPorTime = 3; -> O Dart vai dar erro!
 
   // Um valor final que é capturado na hora (hora do início da partida)
-  final horaInicio = DateTime.now();
-  print("A partida começou exatamente às: " + horaInicio.toString());
+ // final horaInicio = DateTime.now();
+  //print("A partida começou exatamente às: " + horaInicio.toString());
 
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS
@@ -40,5 +40,18 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
-}
+  void main(){
+    var vidasAtuais = 5;
+    const vidaMaxima = 5;
+    var dano = 1;
+    var tomeiDano = true;
+
+    if(tomeiDano != false){
+      vidasAtuais = vidasAtuais - dano;
+      print("vida maxima:" + vidaMaxima.toString());
+      print("vida atual:" + vidasAtuais.toString());
+    }else{
+      print("vida maxima:" + vidaMaxima.toString());
+      print("vida atual:" + vidasAtuais.toString());
+    }
+  }

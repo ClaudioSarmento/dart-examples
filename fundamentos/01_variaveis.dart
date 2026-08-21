@@ -10,23 +10,23 @@
   O Dart é inteligente e descobre sozinho o que tem dentro da caixa (texto, número, etc).
 */
 
-void main() {
+//void main() {
   // ------------------------------------------
   // EXEMPLOS PRÁTICOS
   // ------------------------------------------
   
   // Criando o perfil de um personagem de jogo
-  var nomePersonagem = "Kratos";
-  var nivel = 42;
-  var moedasDeOuro = 1500.50;
-  var temPocaoDeVida = true;
+ // var nomePersonagem = "Kratos";
+  //var nivel = 42;
+ // var moedasDeOuro = 1500.50;
+ // var temPocaoDeVida = true;
 
-  print("Personagem: " + nomePersonagem);
-  print("Nível atual: " + nivel.toString());
+  //print("Personagem: " + nomePersonagem);
+ // print("Nível atual: " + nivel.toString());
 
   // Mudando o valor da variável (o nível aumentou!)
-  nivel = 43;
-  print("Novo nível: " + nivel.toString());
+  //nivel = 43;
+  //print("Novo nível: " + nivel.toString());
 
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS
@@ -43,5 +43,16 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
-}
+  void main(){
+    var nomeApp = "Instagrão";
+    var seguidores = 67;
+    var contaPrivada = false;
+
+    print("NomeApp:" + nomeApp);
+    print("Seguidores:" + seguidores.toString());
+    if (contaPrivada != true){
+      print("Conta:"+"Pública");
+    }else{
+      print("Conta:"+"Privada");
+    }
+    }
