@@ -42,6 +42,31 @@ void main() {
     Depois, use o comando print() para mostrar essas informações no terminal!
   */
   
-  // Escreva seu código abaixo desta linha:
-  
+  // Escreva seu código abaixo desta linha: 
+
+  var nomeTiktok = "Ana Luiza";
+  var seguidores  = 517;
+  var contaAberta = false;
+  var tipoDeConta = "";
+
+  print("Usuário: " + nomeTiktok);
+  print("Seguidores atual: " + seguidores.toString());
+
+  seguidores = 405;
+  print("Seguidores antigo: " + seguidores.toString());
+
+  if (contaAberta == true) {
+    tipoDeConta = "conta Aberta";
+  }
+  else {
+    tipoDeConta = "conta não privada";
+  }
+ 
+  print("Tipo de conta: " + tipoDeConta);
+ 
+
+
+
+
 }
+

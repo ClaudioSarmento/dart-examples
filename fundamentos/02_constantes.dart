@@ -12,6 +12,8 @@
   - final: O valor é descoberto na hora que o programa roda, mas depois não muda mais.
 */
 
+import 'dart:ffi';
+
 void main() {
   // ------------------------------------------
   // EXEMPLOS PRÁTICOS
@@ -38,7 +40,14 @@ void main() {
     2. Crie uma constante (const) para a quantidade "máxima de vidas" que o jogo permite.
     3. Imprima as duas informações no terminal.
   */
-  
+  var vidasDoJogador = 3;
+  const int limiteDeVida = 3;
+
+  print("limite De Vida do Jogador $limiteDeVida" );
+
+  final Inicio = DateTime.now();
+  print("O inicio da partida foi: " + Inicio.hour.toString() + ":" + Inicio.minute.toString()); 
+  print("Vidas do jogador: $vidasDoJogador"); 
   // Escreva seu código abaixo desta linha:
   
 }

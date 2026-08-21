@@ -46,5 +46,15 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+  String nomeMinuscula = "ana luiza";
+  String nomeMaiuscula = nomeMinuscula.toUpperCase();
+
+print("nome Minúscula : " + nomeMinuscula);
+print("nome Maiúscula : " + nomeMaiuscula);
+
+print("Quantidades Minúscula : " + nomeMinuscula.length.toString());
+print("Quantidades Maiúscula : " + nomeMaiuscula.length.toString());
+
+
+
 }

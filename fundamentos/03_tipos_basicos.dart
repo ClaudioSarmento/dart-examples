@@ -46,5 +46,24 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+  String fichaDePaciente = "Ana Luiza";
+  int idade = 17;
+  double altura = 1.64;
+  bool seAprimeiraConsultaDela = true;
+  String primeiraConsulta = "";
   
+  print("Ficha do Paciente: " + fichaDePaciente);
+  print("Idade do Paciente: " + idade.toString());
+  print("Altura do Paciente: " + altura.toString());
+
+  
+  if (seAprimeiraConsultaDela == true) {
+    primeiraConsulta = "Foi um sucesso";
+  }
+  else {
+    primeiraConsulta = "Não foi um sucesso";
+  }
+
+print("Se for a primeira consulta dele: " + primeiraConsulta);
+
 }
