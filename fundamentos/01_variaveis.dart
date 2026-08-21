@@ -16,7 +16,7 @@ void main() {
   // ------------------------------------------
   
   // Criando o perfil de um personagem de jogo
-  var nomePersonagem = "Kratos";
+ /* var nomePersonagem = "Kratos";
   var nivel = 42;
   var moedasDeOuro = 1500.50;
   var temPocaoDeVida = true;
@@ -27,7 +27,7 @@ void main() {
   // Mudando o valor da variável (o nível aumentou!)
   nivel = 43;
   print("Novo nível: " + nivel.toString());
-
+*/
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS
   // ------------------------------------------
@@ -43,5 +43,26 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+  var nomeDoAplicativo = "Spotify";
+  var quatidadeDeMusicas = 152;
+  var seguidores = 19;
+  var contaPublica = false;
+
+  var tipoDeConta = "";
   
+  if (tipoDeConta == true){
+    tipoDeConta = "Privada";
+
+  }
+  else {
+    tipoDeConta = "Publica";
+  }
+
+  print("Aplicativo: " + nomeDoAplicativo);
+  print("Seguidores: " + seguidores.toString());
+
+  print("Músicas: " + quatidadeDeMusicas.toString());
+  print("Tipo de conta: " + tipoDeConta);
+  
+
 }

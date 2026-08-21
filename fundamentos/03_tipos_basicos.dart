@@ -46,5 +46,15 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+
+  String nomeDoPaciente = "Pedro";
+  int idade = 23;
+  double altura = 1.78;
+  bool primeiraConsuta = false;
+
+  print("Nome do paciente: " + nomeDoPaciente);
+  print("idade: " + idade.toString());
+  print("Altura: " + altura.toString() + " cm");
+  print("Primeria consulta? " + primeiraConsuta.toString());
   
 }

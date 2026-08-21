@@ -47,4 +47,21 @@ void main() {
   
   // Escreva seu código abaixo desta linha:
   
+   String fraseMinuscula= " vamo pa casa  ";
+  
+  // Limpando os espaços em branco antes e depois com o .trim()
+  String fraseLimpa = fraseMinuscula.trim();
+  
+  // Transformando tudo em maiúsculo com o .toUpperCase()
+  String fraseGritando = fraseLimpa.toUpperCase();
+  
+  print("Nome original: '" + fraseMinuscula + "'");
+  print("Nome corrigido: " + fraseLimpa);
+  print("Nome destaque: " + fraseGritando);
+  print("Quantidade de caracteres: " + fraseLimpa.length.toString());
+
+  // Também funciona com números!
+  double notaDeProva = 7.4;
+  print("Nota arredondada: " + notaDeProva.round().toString());
+
 }

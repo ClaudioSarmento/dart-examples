@@ -40,5 +40,11 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+ var vidas = 2;
+ const int maxVidas = 3;
+
+
+ print("O maximo de vidas é $maxVidas por jogador.");
+
+ 
 }
