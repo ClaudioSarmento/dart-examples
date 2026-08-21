@@ -44,4 +44,28 @@ void main() {
   
   // Escreva seu código abaixo desta linha:
   
+
+  var aplicativoFav = "Youtube Music";
+  var MusicasSalvas = 6;
+  var Playlist = 200;
+  var PrivacidadeDaConta = true;
+  var tipoDeConta = "";
+
+  print("aplicativosFav: " + aplicativoFav);
+  print("Playlist: " + Playlist.toString());
+  
+  Playlist = 100;
+  print("Playlist antiga: " + Playlist.toString());
+
+
+
+ if (PrivacidadeDaConta == true) {
+  tipoDeConta = "A conta é pública";
+
+ }
+ else{
+  tipoDeConta = "A conta é privada";
+ }
+
+print("Tipo de Conta: " + tipoDeConta);
 }

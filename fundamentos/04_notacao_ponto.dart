@@ -47,4 +47,13 @@ void main() {
   
   // Escreva seu código abaixo desta linha:
   
+   String frase = "   o homem nasce bom, mas é corrompido pela socidade   ";
+   String nome = frase.trim();
+    String nomeBaixo = nome.toUpperCase();
+
+  print("Frase Escolhida: '" + frase + "'");
+  print("Nome: " + nome);
+  print("Frase Minúscula: " + nomeBaixo);
+  print("Quantidade de caracteres: " + nome.length.toString());
+
 }

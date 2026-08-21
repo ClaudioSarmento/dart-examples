@@ -46,5 +46,26 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+  String paciente = "Matadouro";
+  int idade = 12;
+  double altura = 1.67;
+  bool consultapaciente = true;
+  var consulta = "";
+
+  print("Paciênte: " + paciente);
+  print("Idade: " + idade.toString());
+  print("Altura: " + altura.toString() + " kg");
+  print("Primeira Consulta?" + consultapaciente.toString());
+
+    
+  if (consultapaciente == true) {
+    consulta = "É a primeira consulta do paciente";
+
+  }
+  else{
+   consulta = "Não é a primeira consulta";
+  }
+
+  print("Consulta Paciente: " + consulta);
+
 }
