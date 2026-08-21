@@ -12,22 +12,7 @@
 
 void main() {
   // ------------------------------------------
-  // EXEMPLOS PRÁTICOS
-  // ------------------------------------------
-  
-  // Criando o perfil de um personagem de jogo
-  var nomePersonagem = "Kratos";
-  var nivel = 42;
-  var moedasDeOuro = 1500.50;
-  var temPocaoDeVida = true;
-
-  print("Personagem: " + nomePersonagem);
-  print("Nível atual: " + nivel.toString());
-
-  // Mudando o valor da variável (o nível aumentou!)
-  nivel = 43;
-  print("Novo nível: " + nivel.toString());
-
+  // EXEMPLOS PRÁTICO
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS
   // ------------------------------------------
@@ -43,5 +28,33 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+
+
+
+
+
+
+
+
+  var aplicativo = "Spotify";
+  var nome = "Miguel";
+  var musica = "Trepada em Cuiaba";
+  var tempo = 3.24;
+  var tempoAtual = 1.23;
+  var restante = tempo - tempoAtual;
+  var datadeLancamento = "23-03-1999";
+  var pausado = true;
+
+  print("O usuario " + nome + " esta ouvindo a musica:");
+  print(musica);
+  print("Tempo total " + tempo.toString() + " ja se passaram " + tempoAtual.toString() + " restando: " + restante.toStringAsFixed(2));
+  print("E esta pausado: " + pausado.toString());
+  print("Lançado em: " + datadeLancamento);
+
+
+
+
+
+
   
 }
