@@ -23,6 +23,8 @@ void main() {
   
   // Transformando tudo em maiúsculo com o .toUpperCase()
   String nomeGritando = nomeLimpo.toUpperCase();
+
+  String nomeEmCaixaBaixa = nomeGritando.toLowerCase();
   
   print("Nome original: '" + nomeUsuario + "'");
   print("Nome corrigido: " + nomeLimpo);
@@ -30,7 +32,7 @@ void main() {
   print("Quantidade de caracteres: " + nomeLimpo.length.toString());
 
   // Também funciona com números!
-  double notaDaProva = 7.4;
+  double notaDaProva = 7.8;
   print("Nota arredondada: " + notaDaProva.round().toString());
 
   // ------------------------------------------

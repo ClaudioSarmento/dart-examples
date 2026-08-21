@@ -13,6 +13,7 @@
 */
 
 void main() {
+
   // ------------------------------------------
   // EXEMPLOS PRÁTICOS
   // ------------------------------------------
@@ -25,7 +26,12 @@ void main() {
   // Se tentarmos fazer: maxJogadoresPorTime = 3; -> O Dart vai dar erro!
 
   // Um valor final que é capturado na hora (hora do início da partida)
-  final horaInicio = DateTime.now();
+  final horaInicio;
+
+
+  horaInicio = DateTime.now();
+
+
   print("A partida começou exatamente às: " + horaInicio.toString());
 
   // ------------------------------------------
