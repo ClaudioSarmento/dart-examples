@@ -16,7 +16,7 @@ void main() {
   
   // Exemplo: Verificando se o personagem tem os atributos para usar uma arma (Build de Qualidade)
   int motricidade = 15;
-  int tecnica = 20;
+  int tecnica = 15;
   
   int requisitoMotricidade = 12;
   int requisitoTecnica = 18;

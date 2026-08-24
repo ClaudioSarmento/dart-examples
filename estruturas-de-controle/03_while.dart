@@ -17,7 +17,7 @@ void main() {
   
   // Uma partida de Futevôlei acaba quando um time chega a 18 pontos.
   int pontosTimeA = 14;
-  int pontosTimeB = 17;
+  int pontosTimeB = 15;
 
   print("Placar: Time A ($pontosTimeA) x Time B ($pontosTimeB)");
   
