@@ -16,28 +16,29 @@ void main() {
   // ------------------------------------------
   
   // 1. Usando CONTINUE (Pulando algo que não queremos)
-  print("--- LISTA DE PACIENTES PARA ATENDIMENTO ---");
-  List<String> pacientes = ["João", "Maria (Cancelou)", "Pedro", "Ana"];
+  // print("--- LISTA DE PACIENTES PARA ATENDIMENTO ---");
+  // List<String> pacientes = ["João", "Maria (Cancelou)", "Pedro", "Ana"];
   
-  for (int i = 0; i < pacientes.length; i++) {
-    // Se o nome do paciente contiver a palavra "(Cancelou)", pulamos ele
-    if (pacientes[i].contains("(Cancelou)")) {
-      print("Pulando horário vago...");
-      continue; // Vai direto para o próximo 'i' sem ler o código abaixo
-    }
-    print("Atendendo paciente: ${pacientes[i]}");
-  }
+  // for (int i = 0; i < pacientes.length; i++) {
+  //   print("Valor de i nesse momento: " + i.toString());
+  //   // Se o nome do paciente contiver a palavra "(Cancelou)", pulamos ele
+  //   if (pacientes[i].contains("(Cancelou)")) {
+  //     print("Pulando horário vago...");
+  //     continue; // Vai direto para o próximo 'i' sem ler o código abaixo
+  //   }
+  //   print("Atendendo paciente: ${pacientes[i]}");
+  // }
 
   print("\n--- BUSCANDO ITEM NO INVENTÁRIO ---");
   // 2. Usando BREAK (Parando ao encontrar o que queríamos)
-  List<String> inventario = ["Poção", "Mapa", "Chave do Chefe", "Escudo"];
+  List<String> inventario = ["Poção", "Mapa", "Chave do Chefe", "Escudo", "Lapis", "Caneta", "Borracha"];
   
   for (int i = 0; i < inventario.length; i++) {
     print("Olhando slot $i: ${inventario[i]}");
     
-    if (inventario[i] == "Chave do Chefe") {
-      print("Achei a chave! Não preciso mais olhar o resto da mochila.");
-      break; // Encerra o 'for' imediatamente
+    if (inventario[i] == "Escudo") {
+      print("Achei o escudo! Não preciso mais olhar o resto da mochila.");
+      break; 
     }
   }
 
