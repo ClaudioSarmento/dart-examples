@@ -47,5 +47,11 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+  int idade = 19;
+  bool temIngresso = true;
+  bool podeEntrarNoShow = (idade >=16  &&  temIngresso == true);
+
+  print("Tem quer ter 16 ou mais : " + idade.toString());
+  print("Pode entrar no show: " + podeEntrarNoShow.toString());
   
 }

@@ -42,5 +42,8 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+  List<String> nomeDeAmigos = ["Ariella", "Agata", "Emily"];
+  print("Meus Favoritos: $nomeDeAmigos");
+  print("Um dos Melhores: ${nomeDeAmigos[0]}");
   
 }
