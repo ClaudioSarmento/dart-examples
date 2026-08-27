@@ -25,7 +25,11 @@ void main() {
   // ------------------------------------------
   // EXEMPLOS PRÁTICOS
   // ------------------------------------------
-  
+  Jogador jogador3 = Jogador();
+  jogador3.nome = "Claudio";
+  jogador3.idade = 28;
+  jogador3.pontos = 23;
+
   // 2. Construindo Objetos a partir do molde
   Jogador jogador1 = Jogador(); // O () significa: "Construa um novo para mim"
   jogador1.nome = "Felipe";

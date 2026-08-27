@@ -20,7 +20,7 @@ class AtletaFutevolei {
   void atacar() {
     if (energia >= 20) {
       print("$nome cortou a bola com força!");
-      energia -= 20; // Gasta 20 de energia
+      energia -= 20; // Gasta 20 de energia energia = energia - 20 | 100 = 100 - 20 | 80
     } else {
       print("$nome está exausto e mal conseguiu passar a bola...");
     }
@@ -39,12 +39,30 @@ void main() {
   
   AtletaFutevolei atleta = AtletaFutevolei();
   atleta.nome = "Carlos";
+  atleta.energia = 200;
 
+  print("Energia antes de atacar pela primeira vez: ${atleta.energia}");
   // Usando a notação ponto para chamar as ações
   atleta.atacar();
-  atleta.marcarPonto();
+  print("Atacou a primeira vez, Energia restante: ${atleta.energia}");
+
+  atleta.atacar();
+  print("Atacou pela segunda vez, Energia restante: ${atleta.energia}");
+
+  atleta.atacar();
+  print("Atacou pela terceira vez, Energia restante: ${atleta.energia}");
+
+   atleta.atacar();
+  print("Atacou pela quarta vez, Energia restante: ${atleta.energia}");
+
+  atleta.atacar();
+  print("Atacou pela quinta vez, Energia restante: ${atleta.energia}");
+
+    atleta.atacar();
+  print("Atacou pela sexta vez, Energia restante: ${atleta.energia}");
+
+  // atleta.marcarPonto();
   
-  print("Energia restante: ${atleta.energia}");
 
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS

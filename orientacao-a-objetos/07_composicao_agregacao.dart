@@ -33,6 +33,9 @@ class ArenaFutevolei {
   
   // COMPOSIÇÃO: A Arena já nasce construindo suas próprias quadras internamente.
   // Se a Arena deixar de existir, as quadras dela deixam de existir.
+  // A palavra late significa "mais tarde" em inglês e 
+  // funciona como uma promessa que você faz ao Dart, avisando: "Confie em mim, 
+  // essa variável está vazia agora, mas eu prometo preenchê-la antes de usá-la".
   late QuadraAreia quadraPrincipal; 
   
   // AGREGAÇÃO: A Arena possui uma lista de alunos, mas os alunos 
@@ -63,7 +66,7 @@ void main() {
   // ------------------------------------------
   
   // 1. Criamos a Arena (isso automaticamente constrói a QuadraAreia lá dentro)
-  ArenaFutevolei arena = ArenaFutevolei("Arena 847 - Novo Horizonte");
+  ArenaFutevolei arena = ArenaFutevolei("Arena Futvôlei");
 
   // 2. Criamos Atletas soltos no mundo
   Atleta aluno1 = Atleta("Marcos");

@@ -36,10 +36,12 @@ void main() {
   
   // Agora construímos a Arena em uma única etapa, passando os dados!
   ArenaEsportiva arenaLocal = ArenaEsportiva(
-    nome: "Arena 847",
+    nome: "Arena",
     cidade: "Serra - ES",
     possuiIluminacao: true,
   );
+
+  ArenaEsportiva arenaLocal2 = ArenaEsportiva(nome: "Arena 2", cidade: "Cariacica");
 
   arenaLocal.exibirDetalhes();
 

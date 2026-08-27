@@ -18,6 +18,7 @@ void exibirBoasVindas(String nomeUsuario) {
   print("Bem-vindo ao app, $nomeUsuario!");
 }
 
+
 // 2. Função com Retorno (Recebe dados, calcula e DEVOLVE um resultado)
 // Aqui usamos 'double' antes do nome para avisar que a função vai cuspir um número.
 double calcularIMC(double peso, double altura) {
@@ -33,6 +34,7 @@ void main() {
   // Chamando a máquina de dar boas-vindas
   exibirBoasVindas("Arthur");
   exibirBoasVindas("Beatriz");
+  exibirBoasVindas("Ana");
 
   // Chamando a máquina de calcular IMC (precisamos guardar o que ela devolve)
   double meuImc = calcularIMC(70.5, 1.75);

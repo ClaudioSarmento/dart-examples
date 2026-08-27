@@ -10,13 +10,31 @@
   Assim, na hora de usar, precisamos escrever o NOME do parâmetro. A ordem não importa mais!
   - required: significa que somos obrigados a passar aquele parâmetro.
 */
+void reservarQuadra2(String modalidade, 
+String horario, 
+[bool incluirBola = false]){
+ 
+}
 
+void main2(){
+  reservarQuadra2("19:30","Futebol", true);
+  reservarQuadra(modalidade: "Futebol", horario: "19:30", incluirBola: true);
+  String modalidadeSelecionada = "FuteBoL".toUpperCase();
+  reservarQuadra3(modalidade: modalidadeSelecionada);
+}
+
+void reservarQuadra3({
+  required String modalidade
+}){
+  print("Modalidade: $modalidade");
+}
 // Sistema de reservas de uma Arena Esportiva
 void reservarQuadra({
   required String modalidade, 
   required String horario, 
   bool incluirBola = false // Valor padrão, não é obrigatório preencher
-}) {
+}
+) {
   print("--- RESERVA CONFIRMADA ---");
   print("Modalidade: $modalidade");
   print("Horário: $horario");
@@ -29,10 +47,12 @@ void main() {
   // ------------------------------------------
   
   // Olha como o código fica super fácil de ler! E a ordem não importa:
+
+
   reservarQuadra(
-    horario: "19:00", 
+    incluirBola: true,
     modalidade: "Futevôlei", 
-    incluirBola: true
+    horario: "19:00"
   );
 
   // Como incluirBola tem um valor padrão, não somos obrigados a passá-lo:

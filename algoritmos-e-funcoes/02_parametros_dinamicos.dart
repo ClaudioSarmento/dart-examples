@@ -22,6 +22,10 @@ void main() {
   // ------------------------------------------
   
   // Simulando um banco de dados flexível
+  dynamic teste = "";
+  String tipo = teste.runtimeType.toString();
+  print("A variavel teste é do tipo $tipo");
+
   processarInformacao("Nome do Paciente: Carlos"); // Texto
   processarInformacao(25); // Número inteiro (Idade)
   processarInformacao(78.5); // Número quebrado (Peso)
