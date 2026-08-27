@@ -41,4 +41,11 @@ void main() {
   
   // Escreva seu código abaixo desta linha:
   
+  var vidas = 10;
+  const int quantidadeVidas = 3;
+
+  final int valorDois;
+  valorDois = 5;
+
+
 }
