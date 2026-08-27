@@ -47,4 +47,23 @@ void main() {
   
   // Escreva seu código abaixo desta linha:
   
+  String nome   = "Capivara";
+  int    idade  = 17;
+  double altura = 1.87;
+  bool avaliacao = true;
+  String passoudeano = "";
+
+  print("Nome: " + nome);
+  print("Idade: " + idade.toString());
+  print("Altura: " + altura.toString());
+
+  if (avaliacao == true) {
+passoudeano = "Sim";
+
+}
+else {
+passoudeano = "Não";
+}
+print("Passou de ano?: " + passoudeano.toString () );
+
 }

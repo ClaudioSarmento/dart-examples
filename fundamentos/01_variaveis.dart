@@ -44,4 +44,25 @@ void main() {
   
   // Escreva seu código abaixo desta linha:
   
+var aplicativoFav = "Spotify";
+var musicasSalvas = 355;
+var privacidadeDaConta = true;
+var tipoDeConta = "";
+
+print("Aplicativo: " + aplicativoFav);
+print("Musicas Salvas: " + musicasSalvas.toString());
+
+musicasSalvas = 356;
+print("Nova música: " + musicasSalvas.toString());
+
+if (privacidadeDaConta != false) {
+tipoDeConta = "A conta é privada";
+}
+else {
+tipoDeConta = "A conta é pública";
+}
+
+print("Tipo de conta: " + tipoDeConta);
+
+
 }

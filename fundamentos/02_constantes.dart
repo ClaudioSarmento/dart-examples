@@ -40,5 +40,12 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+
+ var vidas = 3;
+ const int quantVidas = 3;
+  final int sozinho;
+  sozinho = 5;
+ print("O limite de vidas é $quantVidas.");
+
+
 }

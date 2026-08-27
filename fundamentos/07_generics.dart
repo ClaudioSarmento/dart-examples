@@ -42,5 +42,8 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+  List<String> nomes = ["iiii", "eeee", "aaaa", "aaaaa"];
+  print("amigos: $nomes");
+  print("amigo: ${nomes[1]}");
+
 }

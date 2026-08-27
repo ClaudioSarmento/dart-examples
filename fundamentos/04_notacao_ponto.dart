@@ -16,22 +16,22 @@ void main() {
   // EXEMPLOS PRÁTICOS
   // ------------------------------------------
   
-  String nomeUsuario = "   fulano_gamer123   ";
+  // String nomeUsuario = "   fulano_gamer123   ";
   
-  // Limpando os espaços em branco antes e depois com o .trim()
-  String nomeLimpo = nomeUsuario.trim();
+  // // Limpando os espaços em branco antes e depois com o .trim()
+  // String nomeLimpo = nomeUsuario.trim();
   
-  // Transformando tudo em maiúsculo com o .toUpperCase()
-  String nomeGritando = nomeLimpo.toUpperCase();
+  // // Transformando tudo em maiúsculo com o .toUpperCase()
+  // String nomeGritando = nomeLimpo.toUpperCase();
   
-  print("Nome original: '" + nomeUsuario + "'");
-  print("Nome corrigido: " + nomeLimpo);
-  print("Nome destaque: " + nomeGritando);
-  print("Quantidade de caracteres: " + nomeLimpo.length.toString());
+  // print("Nome original: '" + nomeUsuario + "'");
+  // print("Nome corrigido: " + nomeLimpo);
+  // print("Nome destaque: " + nomeGritando);
+  // print("Quantidade de caracteres: " + nomeLimpo.length.toString());
 
-  // Também funciona com números!
-  double notaDaProva = 7.4;
-  print("Nota arredondada: " + notaDaProva.round().toString());
+  // // Também funciona com números!
+  // double notaDaProva = 7.4;
+  // print("Nota arredondada: " + notaDaProva.round().toString());
 
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS
@@ -47,4 +47,15 @@ void main() {
   
   // Escreva seu código abaixo desta linha:
   
+String frase = "  Uma azeitona flutuante estava temperando batatas com butterfly wings  .";
+String limpar = frase.trim();
+String gritar = frase.toUpperCase();
+
+print("Frase original: " + frase + "");
+print("Frase corrigida: " + limpar);
+print("Nome gritando:" + gritar);
+print("Quantidade de caracteres: " + limpar.length.toString());
+
+
+
 }

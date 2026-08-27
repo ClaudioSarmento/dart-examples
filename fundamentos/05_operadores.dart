@@ -26,7 +26,7 @@ void main() {
   // Regra: Apenas administradores e coordenadores têm acesso à plataforma.
   // Colaboradores não têm acesso.
   
-  String cargo = "coordenador";
+  String cargo = "administrador";
   
   // Lemos assim: "O acesso é liberado SE o cargo for igual a administrador OU igual a coordenador"
   bool acessoLiberado = (cargo == "administrador" || cargo == "coordenador");
@@ -47,5 +47,11 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+  int idade = 16;
+  bool temIngresso = false;
+
+  bool podeEntrarNoShow = (idade >= 16 && temIngresso == true);
+   print("A pessoa pode entrar no show? " + podeEntrarNoShow.toString());
+
   
 }
