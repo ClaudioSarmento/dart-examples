@@ -42,5 +42,11 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+  List<String> amigos = ["Gaylherme", "Luiz", "Gaybriel"];
+
+  // Imprime a lista completa
+  print(amigos);
+
+  // Imprime o segundo amigo (índice 1)
+  print(amigos[1]);
 }
