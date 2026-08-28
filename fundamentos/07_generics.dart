@@ -18,17 +18,17 @@ void main() {
   
   // Inventário de armas de um jogo. 
   // O <String> garante que só entra texto nessa lista.
-  List<String> inventarioArmas = ["Espada Rápida", "Machado Pesado", "Braço Mecânico"];
+ // List<String> inventarioArmas = ["Espada Rápida", "Machado Pesado", "Braço Mecânico"];
   
   // Imprimindo a lista inteira
-  print("Seu inventário de armas: $inventarioArmas");
+ // print("Seu inventário de armas: $inventarioArmas");
 
   // Acessando um item específico (a contagem sempre começa no ZERO!)
-  print("Arma equipada: ${inventarioArmas[0]}"); // Vai imprimir "Espada Rápida"
+  //print("Arma equipada: ${inventarioArmas[0]}"); // Vai imprimir "Espada Rápida"
 
-  // Uma lista onde o Generic diz que só aceita números inteiros
-  List<int> pontuacoes = [150, 200, 90, 310];
-  print("Maior pontuação registrada: ${pontuacoes[3]}");
+ // // Uma lista onde o Generic diz que só aceita números inteiros
+ // List<int> pontuacoes = [150, 200, 90, 310];
+ // print("Maior pontuação registrada: ${pontuacoes[3]}");
 
   // ------------------------------------------
   // EXERCÍCIOS PARA OS ALUNOS
@@ -42,5 +42,6 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+   List<String> inventarioNome = ["Isabela", "Emilly", "Beatriz"];
+   print("Minha Amiga é: ${inventarioNome[1]}");
 }
