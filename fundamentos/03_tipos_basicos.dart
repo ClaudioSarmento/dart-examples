@@ -46,5 +46,26 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+  String Nome = "Snake";
+  int idade = 79;
+  double altura = 1.93;
+  bool primeiraConsuntal = false;
+
+  print("Nome: " + Nome);
+  print("Idade: " + idade.toString());
+  print("Altura: " + altura.toString() );
+  
+  if(primeiraConsuntal = false){
+
+  print("primeira  consulta?"+ "sim");
+ 
+ }else{
+
+ print("primeira consulta?"+ "nao");
+
+ }
+
+ 
+
   
 }

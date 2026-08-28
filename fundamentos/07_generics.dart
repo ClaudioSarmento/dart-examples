@@ -42,5 +42,8 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+  List<String> listadeamigos = ["Diogo","Arthu","Erick"];
+  print("Seus amigos são:$listadeamigos");
+  print("segundo amigo: ${
+    listadeamigos[1]}");
 }

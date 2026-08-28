@@ -10,7 +10,7 @@
   Usamos 'const' ou 'final' para criar constantes.
   - const: O valor já é conhecido antes mesmo do programa rodar.
   - final: O valor é descoberto na hora que o programa roda, mas depois não muda mais.
-*/
+*/  
 
 void main() {
   // ------------------------------------------
@@ -38,7 +38,11 @@ void main() {
     2. Crie uma constante (const) para a quantidade "máxima de vidas" que o jogo permite.
     3. Imprima as duas informações no terminal.
   */
-  
+
   // Escreva seu código abaixo desta linha:
-  
+  final  Vidaatual = 20;
+  const VidaMaxima = 30;
+
+  print("A vida maxima do jogar é $VidaMaxima");
+  print("A vida atual do Jogar é $Vidaatual");
 }

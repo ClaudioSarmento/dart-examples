@@ -46,5 +46,13 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
-  
+  String nome = "  jose  ";
+  String nomeembranco = nome.trim();
+
+   String nomeGrande = nomeembranco.toUpperCase();
+
+    print("Nome original: '" + nome + "'");
+  print("Nome corrigido: " + nomeembranco);
+  print("Nome destaque: " + nomeGrande);
+  print("Quantidade de caracteres: " + nomeembranco.length.toString());
 }

@@ -43,5 +43,23 @@ void main() {
   */
   
   // Escreva seu código abaixo desta linha:
+  var nomeApp = "Steam";
+  var nomePerfil = "Dhyonatan dean";
+  var amigos = 27;
+  var contapublica = true;
+  var tipoDeconta = "";
+
+  if(contapublica == true){
+    tipoDeconta = "Privada";
+  }else{
+    tipoDeconta = "publica";
+  }
+
+  
+  print("Aplicativo:" + nomeApp);
+  print("Nome de Usuario:"+ nomePerfil);
+  print("Amigos:" + amigos.toString());
+  print("tipos de contas:" + tipoDeconta);
+  
   
 }
