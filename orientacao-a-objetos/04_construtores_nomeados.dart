@@ -7,7 +7,7 @@
   O QUE SÃO CONSTRUTORES NOMEADOS?
   E se quisermos ter várias "esteiras de fábrica" diferentes para a mesma classe?
   Por exemplo, posso criar um usuário normal, mas posso ter um botão rápido 
-  só para criar um "usuário administrador". 
+  só para criar um "usuário administrador". 2
   No Flutter, usamos isso o tempo todo (ex: ListView e ListView.builder).
 
   ListView: 
@@ -45,13 +45,14 @@ class Personagem {
   // Ele já força o nível a ser 1, sem perguntar para quem está criando.
   Personagem.iniciante({required this.nome, required this.classe}) : nivel = 1;
 
+
   // 3. Construtor Nomeado (Fábrica rápida de chefões)
   Personagem.chefeDaFase({required this.nome}) 
     : classe = "Boss", 
       nivel = 99;
 
   void mostrarStatus() {
-    print("[$nivel] $nome - $classe");
+    print("$nome - $classe [$nivel]");
   }
 }
 
@@ -59,7 +60,9 @@ void main() {
   // ------------------------------------------
   // EXEMPLOS PRÁTICOS
   // ------------------------------------------
-  
+  String nome = "Claudio";
+  nome.toLowerCase();
+
   Personagem heroi = Personagem(nome: "Arthur", classe: "Arqueiro", nivel: 15);
   Personagem novato = Personagem.iniciante(nome: "Lucas", classe: "Guerreiro");
   Personagem vilao = Personagem.chefeDaFase(nome: "Rei Macabro");

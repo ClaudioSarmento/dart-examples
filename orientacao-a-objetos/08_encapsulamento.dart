@@ -22,12 +22,12 @@ class PersonagemRPG {
 
   // Privado: O underline (_) avisa o Dart "Tranque esta variável!"
   int _vida = 100; 
-
+  
   PersonagemRPG(this.nome);
 
   // GETTER: O porteiro que deixa ler o valor.
-  // Note que não usamos parênteses () como em funções normais.
-  int get vidaAtual {
+  // Note que não usamos parênteses () como em funções normais.// método acessor
+  int get vidaAtual { 
     return _vida;
   }
 

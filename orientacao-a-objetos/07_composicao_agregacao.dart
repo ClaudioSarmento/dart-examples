@@ -19,7 +19,10 @@
 class QuadraAreia {
   String nome;
   QuadraAreia(this.nome);
-  void preparar() => print("Passando o rastelo e molhando a $nome...");
+  //void preparar() => print("Passando o rastelo e molhando a $nome...");
+  void preparar(){
+    print("Passando o rastelo e molhando a $nome...");
+  }
 }
 
 class Atleta {
@@ -71,10 +74,12 @@ void main() {
   // 2. Criamos Atletas soltos no mundo
   Atleta aluno1 = Atleta("Marcos");
   Atleta aluno2 = Atleta("Julia");
+  Atleta aluno3 = Atleta("Juliel");
 
   // 3. Agregamos os Atletas à Arena
   arena.matricularAluno(aluno1);
   arena.matricularAluno(aluno2);
+  arena.matricularAluno(aluno3);
 
   // 4. Rodamos a ação principal
   arena.iniciarTreino();

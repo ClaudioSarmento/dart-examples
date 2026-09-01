@@ -55,7 +55,7 @@ void main() {
   // ------------------------------------------
   /*
     DESAFIO:
-    1. Crie uma classe 'Veiculo' com a propriedade 'velocidade' e um método 'acelerar()'.
+    1. Crie uma classe 'Veiculo' com a propriedade (parametro) 'velocidade' e um método 'acelerar()'.
     2. Crie uma classe 'Carro' que herda (extends) de 'Veiculo' e adicione 
        uma propriedade exclusiva chamada 'quantidadePortas'.
     3. Crie um carro no main(), acelere-o e imprima a quantidade de portas.
