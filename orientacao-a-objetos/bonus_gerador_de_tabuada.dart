@@ -57,8 +57,31 @@ void main() {
     2. Dentro dele, coloque outro 'for' para o multiplicador (de 1 a 10).
     3. Use a interpolação de strings ($) para deixar a impressão bem bonita!
   */
-  
-  // Escreva seu código abaixo desta linha:
-  print("🧮 INICIANDO O GERADOR DE TABUADA...\n");
+
+
+  // ==========================================
+// GABARITO: Loops Aninhados e a Tabuada
+// ==========================================
+
+
+  // print("🧮 INICIANDO O GERADOR DE TABUADA...\n");
+
+  // O Loop de FORA define a "Tabuada atual" (do 1 até o 10)
+  for (int numero = 1; numero <= 10; numero++) {
+    
+    // Imprime o cabeçalho bonitinho para separar cada bloco
+    print("=== TABUADA DO $numero ===");
+    
+    // O Loop de DENTRO define o multiplicador (vezes 1, vezes 2, vezes 3...)
+    for (int multiplicador = 1; multiplicador <= 10; multiplicador++) {
+      
+      // A mágica da interpolação: montamos o texto e já calculamos o resultado nas chaves ${}
+      print("$numero x $multiplicador = ${numero * multiplicador}");
+    }
+    
+    // Um print vazio no final do loop de dentro serve apenas para pular uma linha
+    // antes de começar a próxima tabuada, deixando o visual mais limpo!
+    print(""); 
+  }
 
 }

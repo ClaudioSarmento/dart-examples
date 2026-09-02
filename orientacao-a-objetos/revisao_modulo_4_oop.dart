@@ -60,6 +60,19 @@ class Mago extends Personagem {
   }
 }
 
+class Arqueiro extends Personagem {
+  int precisao;
+
+  Arqueiro(String nome, int vida, int this.precisao) : super(nome, vida);
+
+  @override
+  void usarHabilidade() {
+    print("🏹 $nome disparou uma flecha com $precisao% de chance de acerto crítico!");
+  }
+}
+
+
+
 // 4. COMPOSIÇÃO E AGREGAÇÃO (Um objeto guardando outros objetos)
 class Arena {
   String nomeDaArena;
@@ -101,11 +114,13 @@ void main() {
   Guerreiro guerreiro1 = Guerreiro("Arthur", 120, 35);
   Mago mago1 = Mago("Merlin", 70, 60);
   Mago magoExperiente = Mago.anciao(nomeAvo: "Gandalf"); // Usando o construtor nomeado
+  Arqueiro arqueiro1 = Arqueiro("Arqueiro Verde", 67, 80);
 
   // 3. Juntando as peças (Composição em ação)
   arenaCentral.registrarLutador(guerreiro1);
   arenaCentral.registrarLutador(mago1);
   arenaCentral.registrarLutador(magoExperiente);
+  arenaCentral.registrarLutador(arqueiro1);
 
   // 4. Chamando a ação principal
   arenaCentral.iniciarApresentacao();
