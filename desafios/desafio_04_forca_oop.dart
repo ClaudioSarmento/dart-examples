@@ -4,6 +4,7 @@
 // ==========================================
 
 import 'dart:io';
+import 'dart:math';
 
 // ---------------------------------------------------------
 // CLASSE 1: A Palavra (Foco em Encapsulamento e Métodos)
@@ -90,7 +91,7 @@ class JogoDaForca {
         print("\n⚠️ Por favor, digite apenas UMA letra!");
         continue; // Pula para a próxima repetição do while
       }
-
+    
       if (letrasChutadas.contains(palpite)) {
         print("\n⚠️ Você já chutou a letra '$palpite'. Tente outra!");
         continue;
@@ -114,6 +115,7 @@ class JogoDaForca {
   // Método PRIVADO (começa com _). Só o próprio jogo pode chamar esse painel.
   void _exibirPainel() {
     print("\n---------------------------------");
+    desenharBoneco();
     print("DICA: ${desafio.dica}");
     print("VIDAS RESTANTES: $_vidas");
     print("LETRAS USADAS: $letrasChutadas");
@@ -123,6 +125,9 @@ class JogoDaForca {
 
   void _exibirResultado() {
     print("\n=================================");
+    // Desenhamos pela última vez para mostrar o boneco morto se ele perdeu
+    if (_vidas == 0) desenharBoneco(); 
+    
     if (desafio.verificarVitoria()) {
       print("🏆 PARABÉNS! VOCÊ SOBREVIVEU!");
       print("A palavra era: ${desafio.revelarPalavra}");
@@ -132,6 +137,57 @@ class JogoDaForca {
     }
     print("=================================\n");
   }
+
+ void desenharBoneco(){
+   print("  _______");
+   print(" |/      |");
+   switch(_vidas){
+    case 6: // Ileso
+       print(" |");
+       print(" |");
+       print(" |");
+       print(" |");
+       break;
+    case 5: // Cabeça
+      print(" |      (_)");
+      print(" |");
+      print(" |");
+      print(" |");
+      break;
+    case 4: // Tronco
+      print(" |      (_)");
+      print(" |       |");
+      print(" |       |");
+      print(" |");
+      break;
+    case 3: // Braço Esquerdo
+      print(" |      (_)");
+      print(" |      /|");
+      print(" |       |");
+      print(" |");
+      break;
+    case 2: // Braços
+        print(" |      (_)");
+        print(" |      /|\\");
+        print(" |       |");
+        print(" |");
+        break;
+    case 1: // Perna Esquerda
+        print(" |      (_)");
+        print(" |      /|\\");
+        print(" |       |");
+        print(" |      /");
+        break;
+    case 0: // Enforcado! (Usado apenas no final, se o jogo chamar o painel de novo)
+        print(" |      (_)");
+        print(" |      /|\\");
+        print(" |       |");
+        print(" |      / \\");
+        break;
+   }
+   print("_|_\n");
+ }
+
 }
 
 // ---------------------------------------------------------
@@ -139,10 +195,28 @@ class JogoDaForca {
 // ---------------------------------------------------------
 void main() {
   // 1. Criamos o objeto da palavra
-  PalavraMisteriosa palavra = PalavraMisteriosa("FLUTTER", "Framework criado pelo Google para aplicativos");
+  //PalavraMisteriosa palavra = PalavraMisteriosa("FLUTTER", "Framework criado pelo Google para aplicativos");
+
+  List<PalavraMisteriosa> bancoDePalavras = [
+    PalavraMisteriosa("FLUTTER", "Framework para aplicativos"),
+    PalavraMisteriosa("DART", "Linguagem de programação que estamos aprendendo"),
+    PalavraMisteriosa("FUTEVOLEI", "Esporte famoso de areia"),
+    PalavraMisteriosa("VARIAVEL", "Uma caixa para guardar valores na programação"),
+    PalavraMisteriosa("ALGORITMO", "Sequência de passos lógicos para resolver um problema"),
+  ];
+  
+  // Instanciamos o objeto Random da biblioteca dart:math
+  Random sorteador = Random();
+  
+  // O nextInt() pega um número aleatório de 0 até o tamanho da lista
+  int indiceSorteado = sorteador
+  .nextInt(bancoDePalavras.length);
+  
+  // Puxamos a palavra da lista usando a chave aleatória
+  PalavraMisteriosa palavraEscolhida = bancoDePalavras[indiceSorteado];
 
   // 2. Criamos o jogo, passando a palavra para dentro dele (Composição)
-  JogoDaForca partida = JogoDaForca(palavra);
+  JogoDaForca partida = JogoDaForca(palavraEscolhida);
 
   // 3. Damos o play!
   partida.iniciar();

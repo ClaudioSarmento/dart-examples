@@ -19,6 +19,7 @@ class Mascote {
     if (_energia > 100) _energia = 100;
     if (_energia < 0) _energia = 0;
   }
+ 
 
   // DESAFIO 1 PARA OS ALUNOS:
   /*

@@ -33,6 +33,20 @@ class Mochila {
       4. Faça um 'else': Imprima "A mochila estourou! Não cabe [nome do item]".
     */
     // [CÓDIGO DO ALUNO AQUI]
+    
+    // 1. Pegamos o peso atual que já está na mochila
+    double pesoAtual = calcularPesoAtual();
+    
+    // 2. Simulamos o peso futuro se adicionarmos o novo item
+    double pesoSimulado = pesoAtual + novoItem.peso;
+
+    // 3 e 4. Fazemos a verificação de capacidade
+    if (pesoSimulado <= capacidadeMaxima) {
+      itensGuardados.add(novoItem);
+      print("✅ Sucesso: '${novoItem.nome}' adicionado à mochila!");
+    } else {
+      print("❌ A mochila estourou! Não cabe '${novoItem.nome}' (Faltou espaço para ${pesoSimulado - capacidadeMaxima} kg).");
+    }
   }
 
   void exibirInventario() {

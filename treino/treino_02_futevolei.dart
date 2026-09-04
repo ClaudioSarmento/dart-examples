@@ -35,7 +35,7 @@ class Atacante extends Jogador {
 
 
 class Equipe {
-  String nomeEquipe;
+  String nomeEquipe = "";
   List<Jogador> atletas = []; // Composição/Agregação
 
   Equipe(this.nomeEquipe);
@@ -54,19 +54,35 @@ class Equipe {
       Depois, imprima quanto de fôlego sobrou para ele.
     */
     // [CÓDIGO DO ALUNO AQUI]
+    for(int i = 0; i < atletas.length; i++){
+      atletas[i].fazerJogada();
+      print("O folego do atleta é ${atletas[i].folego}");
+    }
+    
   }
 }
 
 void main() {
   Equipe minhaEquipe = Equipe("Arena 847");
+  minhaEquipe.nomeEquipe;
+
 
   Atacante jogador1 = Atacante("Marcos", 100);
-  // Defensor jogador2 = Defensor("Julia", 100); // Eles precisarão criar a classe!
   Jogador jogador3 = Jogador("Lucas (Iniciante)", 100);
+  //Defensor jogador4 = Defensor("Roberto",80);
+
 
   minhaEquipe.adicionarAtleta(jogador1);
   minhaEquipe.adicionarAtleta(jogador3);
-  // minhaEquipe.adicionarAtleta(jogador2);
+  //minhaEquipe.adicionarAtleta(jogador2);
 
   minhaEquipe.iniciarRali();
+
+  List<String> nomes = ["Amanda","Ana","Jubileu","Guilherme"];
+
+  print("O nome é: ${nomes[2]}");
+
+  for(int i = 0; i < nomes.length; i++){
+    print("O nome na posicao ${i} é ${nomes[i]}");
+  }
 }
