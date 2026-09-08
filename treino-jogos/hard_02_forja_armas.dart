@@ -14,7 +14,8 @@ class Arma {
     Ele deve receber a quantidade de níveis (ex: +1).
     
     REGRAS DA FORJA:
-    1. A arma NUNCA pode passar do Nível 5. (Se tentar, imprima "Nível Máximo Atingido" e não faça nada).
+    1. A arma NUNCA pode passar do Nível 5. 
+    (Se tentar, imprima "Nível Máximo Atingido" e não faça nada).
     2. Se puder upar: adicione o valor ao _nivel.
     3. PENALIDADE: Para cada nível que a arma sobe, a _durabilidadeMaxima 
        deve cair em 15 pontos! (Ex: Se foi pro nível 2, durabilidade cai pra 85).

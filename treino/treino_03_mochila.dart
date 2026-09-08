@@ -14,7 +14,7 @@ class Mochila {
   // Método que calcula o peso total atual usando um Loop
   double calcularPesoAtual() {
     double pesoTotal = 0;
-    
+
     // Passa por todos os itens guardados e soma o peso
     for (int i = 0; i < itensGuardados.length; i++) {
       pesoTotal += itensGuardados[i].peso;
