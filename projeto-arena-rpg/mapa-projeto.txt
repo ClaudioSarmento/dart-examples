@@ -1,0 +1,77 @@
+🗺️ MAPA DO PROJETO: TORNEIO DE ARENA RPG
+A regra de ouro da arquitetura é: Cada arquivo cuida apenas da sua própria responsabilidade. Siga a ordem abaixo para não se perder!
+
+Passo 1: O Molde Base (models/personagem.dart)
+O que é: O coração do sistema. É a classe abstrata que dita as regras de todos que vão lutar (tanto heróis quanto monstros).
+
+Sua Missão:
+
+Crie a classe abstrata Personagem.
+
+Crie as variáveis: nome, _hpMaximo, _hpAtual e danoBase.
+
+Atenção: O _hp deve ser privado (usando o _). Crie Getters para que os outros arquivos possam apenas ler o HP.
+
+Crie um Setter chamado receberDano(int dano) que diminui o _hpAtual, mas que tenha um if para nunca deixar o HP ficar menor que zero.
+
+Crie o método abstrato void atacar(Personagem alvo);
+
+💡 Dica de Ouro: Métodos abstratos não têm corpo (chaves {}). Eles terminam direto no ponto e vírgula!
+
+Passo 2: Os Heróis (models/herois.dart)
+O que é: Aqui nascem as classes reais que o jogador vai usar.
+
+Sua Missão:
+
+Importe o personagem.dart no topo do arquivo.
+
+Crie a classe Guerreiro que herda (extends) de Personagem.
+
+Crie a classe Mago que também herda de Personagem (coloque um atributo de mana só para ele).
+
+Use o @override nas duas classes para reescrever o método atacar(). Cada um deve imprimir um texto diferente e chamar o setter receberDano do alvo.
+
+💡 Dica de Ouro: No construtor dessas classes, você precisará usar o : super(...) para repassar o nome e o HP para a classe pai.
+
+Passo 3: O Monstro (models/inimigo.dart)
+O que é: O adversário da Arena.
+
+Sua Missão:
+
+Importe o personagem.dart.
+
+Crie a classe Monstro herdando de Personagem.
+
+Faça o @override do método atacar().
+
+💡 Dica de Ouro: É praticamente a mesma estrutura do Guerreiro, mas o texto do print será o monstro atacando os heróis!
+
+Passo 4: A Guilda (models/equipe.dart)
+O que é: O arquivo que agrupa seus heróis (Composição).
+
+Sua Missão:
+
+Crie a classe Equipe.
+
+Crie uma Lista que guarde objetos do tipo Personagem (assim a lista aceitará magos e guerreiros juntos!).
+
+Crie um método recrutar(...) que adicione um personagem a essa lista.
+
+Crie um método com um laço for para imprimir o nome e HP de todo mundo que está na lista.
+
+💡 Dica de Ouro: Crie um método que retorne um bool (true ou false) verificando se a equipe ainda tem pelo menos um membro vivo. Isso vai salvar a vida de vocês no arquivo principal!
+
+Passo 5: O Motor do Jogo (main.dart)
+O que é: O único arquivo que conversa com o jogador (usando prints e lendo o teclado). É aqui que o jogo roda.
+
+Sua Missão:
+
+Importe todos os arquivos da pasta models.
+
+Instancie um objeto da sua Equipe e um Monstro (o chefão).
+
+Crie um laço while para fazer o Menu Principal (1- Recrutar, 2- Ver Equipe, 3- Batalhar, 4- Sair) usando o stdin.readLineSync().
+
+O Desafio Final (A Batalha): Na opção 3, crie um laço que rode ENQUANTO o monstro estiver vivo E a equipe tiver heróis vivos. Dentro desse laço, faça um for para seus heróis baterem no monstro e, em seguida, faça o monstro atacar algum herói da lista.
+
+💡 Dica de Ouro: Não tentem fazer o arquivo inteiro de uma vez! Façam primeiro o menu rodar. Depois, façam o cadastro do recrutamento funcionar. Deixem a lógica pesada da batalha para o final. Se quiserem emoção, usem sleep(Duration(seconds: 1)); para o texto não piscar todo de uma vez na tela.

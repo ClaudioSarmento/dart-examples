@@ -12,7 +12,8 @@ Usar Herança para criar tipos diferentes de lutadores.
 Usar Polimorfismo para que cada lutador ataque de um jeito diferente.
 
 Estrutura de Pastas Exigida:
-Vocês deverão criar uma pasta principal para o projeto e, dentro dela, organizar os arquivos exatamente assim:
+Vocês deverão criar uma pasta principal para o projeto e, dentro dela, 
+organizar os arquivos exatamente assim:
 
 projeto_arena/
 │
