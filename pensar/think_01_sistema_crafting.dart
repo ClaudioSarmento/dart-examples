@@ -1,5 +1,5 @@
 class Inventario {
-  List<String> materiais = ["Ferro", "Madeira", "Ferro", "Couro", "Pedra"];
+  List<String> materiais = ["Ferro", "Madeira", "Couro", "Pedra"];
 
   void fabricarEspada() {
     print("🛠️ TENTANDO FABRICAR: Espada de Aço...");
@@ -20,8 +20,34 @@ class Inventario {
          - Senão: 
            Imprima "❌ Materiais insuficientes."
     */
-    
+
     // [CÓDIGO DO ALUNO AQUI]
+    for(var materialAtual in materiais){
+      if(materialAtual == "Ferro"){
+        contagemFerro ++;
+      }else if(materialAtual == "Madeira"){
+        contagemMadeira++;
+      }
+    }
+
+    if(contagemFerro >= 2 && contagemMadeira >= 1){
+      
+    }
+
+    for(int i = 0; i < materiais.length; i++){
+      var materialAtual = materiais[i].toUpperCase();
+      if(materialAtual == "FERRO"){
+        contagemFerro++;
+      }else if(materialAtual == "MADEIRA"){
+        contagemMadeira++;
+      }
+    }
+    if(contagemFerro >= 2 && contagemMadeira >= 1){
+      print("✅ Espada fabricada com sucesso!");
+    }else{
+      print("❌ Materiais insuficientes.");
+    }
+
   }
 }
 

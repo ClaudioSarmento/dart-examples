@@ -33,6 +33,19 @@ class GrupoDeRPG {
        passando o 'danoBolaDeFogo' como parâmetro.
   */
   // [CÓDIGO DO ALUNO AQUI]
+  // void receberDanoEmArea(int danoBolaDeFogo){
+  //   print("🐉 O Dragão cospe fogo no grupo inteiro!!");
+  //   for(int indice = 0; indice < party.length; indice++){
+  //     party[indice].sofrerDano(danoBolaDeFogo);
+  //   }
+  // }
+
+  void receberDanoEmArea(int danoBolaDeFogo){
+    print("🐉 O Dragão cospe fogo no grupo inteiro!!");
+    for(var heroi in party){
+      heroi.sofrerDano(danoBolaDeFogo);
+    }
+  }
 }
 
 void main() {
@@ -44,7 +57,7 @@ void main() {
 
   print("Os heróis entram na caverna...\n");
 
-  // meuGrupo.receberDanoEmArea(50); // O Mago deve morrer no primeiro hit!
-  // print("\nO Dragão ataca de novo!\n");
-  // meuGrupo.receberDanoEmArea(50); // O Arqueiro morre, Guerreiro fica com 0.
+  meuGrupo.receberDanoEmArea(50); // O Mago deve morrer no primeiro hit!
+  print("\nO Dragão ataca de novo!\n");
+  meuGrupo.receberDanoEmArea(50); // O Arqueiro morre, Guerreiro fica com 0.
 }

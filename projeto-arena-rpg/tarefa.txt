@@ -1,0 +1,25 @@
+O Projeto: Torneio de Arena RPG
+Objetivos de Aprendizagem:
+
+Criar um menu interativo no console com while e switch.
+
+Separar a lógica em múltiplos arquivos dentro de pastas.
+
+Proteger os pontos de vida (_hp) para que não sejam alterados fora da classe.
+
+Usar Herança para criar tipos diferentes de lutadores.
+
+Usar Polimorfismo para que cada lutador ataque de um jeito diferente.
+
+Estrutura de Pastas Exigida:
+Vocês deverão criar uma pasta principal para o projeto e, dentro dela, organizar os arquivos exatamente assim:
+
+projeto_arena/
+│
+├── models/
+│   ├── personagem.dart       (Classe Abstrata Base)
+│   ├── herois.dart           (Guerreiro e Mago)
+│   ├── inimigo.dart          (Monstro da Arena)
+│   └── equipe.dart           (Composição: Lista de heróis)
+│
+└── main.dart                 (Menu e Loop do Jogo)
