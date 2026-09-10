@@ -1,0 +1,94 @@
+O Problema: Torneio Cyber-Arena 847
+Vocês foram contratados como Engenheiros de Software de uma oficina mecânica. 
+Vocês precisam criar um sistema para gerenciar robôs gladiadores, 
+equipá-los com armas (que podem quebrar durante a luta) 
+e colocá-los para lutar em um Coliseu contra robôs inimigos gerados aleatoriamente.
+
+O sistema exige o controle de duas barras de status simultâneas: 
+HP (Integridade do Chassi) e Bateria (Energia). 
+Bater forte gasta muita bateria; se a bateria zerar, o robô desliga no meio da arena.
+
+Mapa de Missões
+
+Estrutura de Pastas Exigida:
+
+projeto_mech/
+│
+├── models/
+│   ├── equipamento.dart      (Null Safety e bônus)
+│   ├── robo.dart             (Classe Abstrata e Encapsulamento)
+│   ├── chassis.dart          (RoboPesado e RoboAgil - Herança)
+│   └── oficina.dart          (Composição: Lista de Robôs)
+│
+└── main.dart                 (Menu, Loop de Batalha e RNG)
+
+Missão 1: O Equipamento (models/equipamento.dart)
+Objetivo: Criar os itens que os robôs usarão.
+
+Tarefas:
+
+Crie a classe Equipamento com nome, bonusDano e durabilidade (todos inteiros, exceto o nome).
+
+Crie um método desgastar() que diminui a durabilidade em 1.
+
+Missão 2: O Molde do Robô (models/robo.dart)
+
+Objetivo: A classe abstrata base com proteção de dados estrita.
+
+Tarefas:
+
+Crie a classe abstrata Robo com nome.
+
+Crie atributos privados: _hp e _bateria. Crie Getters para eles.
+
+O atributo mais importante: Equipamento? armaEquipada;. (A interrogação é vital, pois o robô pode ir para a arena desarmado!).
+
+Crie os Setters receberDano(int valor) e gastarBateria(int valor). 
+
+Nenhum dos dois pode permitir que os valores fiquem abaixo de zero. 
+Se o dano for recebido, imprima um alerta visual.
+
+Crie o método abstrato: void atacar(Robo alvo);
+
+Missão 3: Os Modelos de Combate (models/chassis.dart)
+Objetivo: Aplicar Herança e Polimorfismo.
+
+Tarefas:
+
+Importe o robo.dart e o equipamento.dart.
+
+Crie o RoboPesado (Herda de Robo). Ele tem muito HP, mas gasta muita bateria para bater. 
+No @override atacar, ele gasta 20 de bateria. Se não tiver bateria, ele não ataca. 
+Se tiver uma arma (armaEquipada != null), some o dano base com o bônus da arma e chame armaEquipada!.desgastar(). 
+Se a durabilidade da arma chegar a zero, mude armaEquipada para null.
+
+Crie o RoboAgil (Herda de Robo). 
+Menos HP, mas gasta só 10 de bateria por ataque e tem chance de dar um "Ataque Duplo" 
+(use dart:math para sortear 50% de chance de bater duas vezes no mesmo turno).
+
+Missão 4: A Garagem (models/oficina.dart)
+Objetivo: Composição para guardar a equipe.
+
+Tarefas:
+
+Crie a classe Oficina com uma lista de Robo chamada meusRobos.
+
+Crie um método adicionarRobo().
+
+Crie um método repararFrota() que percorre a lista inteira com um for e, através de comandos, 
+restaura o HP e a Bateria de todos os robôs para o máximo.
+
+Missão 5: O Motor da Arena (main.dart)
+Objetivo: O menu principal e o loop da morte.
+
+Tarefas:
+
+Importe tudo. Crie a Oficina.
+
+Faça um while com o menu: 1- Fabricar Robô, 2- Ver Oficina, 3- Lutar na Arena, 4- Sair.
+
+O Desafio da Arena: Na opção 3, crie um RoboPesado inimigo chamado "Destruidor". 
+Faça um laço que rode ENQUANTO o inimigo estiver vivo E a sua oficina tiver robôs vivos.
+
+Em cada turno, seus robôs batem no inimigo. Em seguida, o inimigo bate em um robô seu aleatório. 
+Use sleep(Duration(seconds: 1)) para dar ritmo à luta!
